@@ -1,0 +1,31 @@
+{
+  "thememanager": {
+    "base": {
+      "COLOR_BG": "#FFFFFF",
+      "COLOR_BUTTON_NORMAL": "#374151",
+      "COLOR_BUTTON_ACTIVE": "#064E44",
+      "COLOR_BUTTON_HOVER": "#0F766E",
+      "COLOR_BUTTON_FG": "#FFFFFF",
+      "COLOR_ACCENT": "#282f46",
+      "COLOR_TEXT_BG": "#FFFFFF",
+      "COLOR_TEXT_FG": "#0F172A",
+      "COLOR_BORDER": "#E6EDF8",
+      "COLOR_BG_SECONDARY": "#F8FAFC",
+      "COLOR_GRADIENT_START": "#FFFFFF",
+      "COLOR_GRADIENT_END": "#F3F4F6",
+      "COLOR_TEXT_SECONDARY": "#6B7280",
+
+      "COLOR_DANGER": "#dc2626",
+      "COLOR_HP": "#dc2626",
+      "COLOR_HUNGER": "#d97706",
+      "COLOR_MAGIC": "#2563eb"
+    },
+    "mainmenu": {},
+    "saveselect": {},
+    "gamescreen": {},
+    "settings": {},
+    "credits": {},
+    "createworld": {},
+    "chat": {}
+  }
+}

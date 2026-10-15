@@ -1,0 +1,120 @@
+QWidget {
+    background-color: transparent;
+    color: ${COLOR_TEXT_FG};
+}
+QLabel {
+    background-color: transparent;
+    color: ${COLOR_TEXT_FG};
+}
+
+QLabel[formHelper="true"] {
+    font-size: 12px;
+    color: ${COLOR_TEXT_SECONDARY};
+}
+QTabWidget {
+    background-color: transparent;
+}
+QPushButton {
+    background-color: ${COLOR_BUTTON_NORMAL};
+    color: ${COLOR_BUTTON_FG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: ${COLOR_BUTTON_HOVER};
+}
+
+QLineEdit, QSpinBox, QComboBox {
+    background-color: ${COLOR_TEXT_BG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit[invalid="true"],
+QComboBox[invalid="true"],
+QSpinBox[invalid="true"] {
+    border: 1px solid ${COLOR_DANGER};
+}
+
+QMenu {
+    background-color: ${COLOR_TEXT_BG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+}
+
+QMainWindow {
+    background-color: ${COLOR_BG};
+}
+
+QFrame#Card {
+    background-color: ${COLOR_CARD_BG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 10px;
+}
+
+QLabel#CardTitle {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+QFrame#ChatBubble {
+    border-radius: 8px;
+    border: 1px solid ${COLOR_BORDER};
+    min-height: 32px;
+}
+
+QFrame#SaveCardQt {
+    background-color: transparent;
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+}
+
+QLabel#SaveCardThumb {
+    background-color: ${COLOR_ACCENT};
+    border-radius: 8px;
+}
+
+QLabel#SaveCardTitle {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+QLabel[role="statusLabel"] {
+    color: ${COLOR_STATUS_LABEL};
+}
+
+QLabel[role="statusValue"] {
+    font-weight: 700;
+}
+
+QProgressBar {
+    border: 1px solid ${COLOR_BORDER};
+    background: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: ${COLOR_MAGIC};
+}
+
+QProgressBar[barRole="hp"]::chunk {
+    background-color: ${COLOR_HP};
+}
+
+QProgressBar[barRole="hunger"]::chunk {
+    background-color: ${COLOR_HUNGER};
+}
+
+QProgressBar[barRole="magic"]::chunk {
+    background-color: ${COLOR_MAGIC};
+}
+
+
+QScrollArea QWidget {
+    background: transparent;
+}
+QScrollArea {
+    background: transparent;
+}

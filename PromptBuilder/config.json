@@ -1,0 +1,11 @@
+{
+    "shortcuts": {
+        "save": "<Control-s>",
+        "save_as": "<Control-S>",
+        "undo": "<Control-z>",
+        "redo": "<Control-y>",
+        "quit": "<Control-q>"
+    },
+    "theme": "cosmo",
+    "opening_prompt_template": ""
+}

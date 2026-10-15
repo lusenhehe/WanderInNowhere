@@ -1,0 +1,77 @@
+/* GameScreenQt specific */
+#GameScreenRoot QPushButton {
+    background-color: ${COLOR_BUTTON_NORMAL};
+    color: ${COLOR_BUTTON_FG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+#ChatBubble[role="user"] {
+    background-color: ${COLOR_CHAT_USER_BG};
+    color: ${COLOR_CHAT_USER_FG};
+}
+#ChatBubble[role="assistant"] {
+    background-color: ${COLOR_CHAT_ASSISTANT_BG};
+    color: ${COLOR_CHAT_ASSISTANT_FG};
+}
+#ChatBubble[role="system"] {
+    background-color: rgba(255,255,255,0.08);
+    color: ${COLOR_CHAT_SYSTEM};
+}
+#ChatBubble QLabel {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+#GameScreenRoot QLabel[role="money"] {
+    color: ${COLOR_MONEY};
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#GameScreenRoot QScrollArea#InventoryScrollArea {
+    background: transparent;
+    border: none;
+}
+
+#GameScreenRoot QWidget#InventoryContainer {
+    background: transparent;
+}
+/* ========== QTabWidget 透明+底部选中下划线 美化版 ========== */
+QTabWidget::pane {
+    background: transparent;
+    border: none;
+}
+QTabBar {
+    background: transparent;
+    qproperty-drawBase: 0;
+}
+QTabBar::tab {
+    background: transparent;
+    color: #B0C4DE;
+    margin: 0px 3px;
+    padding: 8px 16px;
+    border-radius: 6px 6px 0px 0px; /* 上圆角+下直角，适配下划线 */
+    min-width: 40px;
+    min-height: 10px;
+    font-size: 12px;
+    border-bottom: 2px solid transparent; /* 预留下划线位置 */
+}
+/* 悬浮态 - 仅文字变白+轻微透明背景 */
+QTabBar::tab:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+}
+/* 选中态 - 底部蓝色下划线+纯白文字，无背景色，极简高级 */
+QTabBar::tab:selected {
+    background: transparent;
+    color: #FFFFFF;
+    border-bottom: 1px solid #4290F7; /* 你ComboBox的选中蓝，配色统一 */
+}
+/* 内部控件强制透明 */
+QTabWidget QWidget,
+QTabWidget QScrollArea {
+    background: transparent;
+    border: none;
+}

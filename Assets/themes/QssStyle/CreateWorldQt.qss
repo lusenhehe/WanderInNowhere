@@ -1,0 +1,22 @@
+#CreateWorldRoot {
+    background-color: transparent;
+}
+
+#CreateWorldRoot QLabel[role="title"] {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+#CreateWorldRoot QLabel[role="subtitle"] {
+    font-size: 13px;
+    font-style: italic;
+    color: ${COLOR_TEXT_SECONDARY};
+}
+
+#CreateWorldRoot QLineEdit,
+#CreateWorldRoot QComboBox {
+    background-color: ${COLOR_TEXT_BG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+    padding: 6px;
+}

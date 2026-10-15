@@ -1,0 +1,16 @@
+QLabel#SaveSelectTitle {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+QLabel#SaveSelectSubtitle {
+    font-size: 13px;
+}
+
+QWidget#SaveList {
+    background-color: transparent;
+}
+
+QLabel#SaveListEmptyHint {
+    font-size: 13px;
+}

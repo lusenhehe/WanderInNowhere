@@ -1,0 +1,48 @@
+/* MainMenuQt specific */
+
+#MainMenuRoot {
+    background-color: transparent;
+    color: ${COLOR_TEXT_FG};
+}
+
+#MainMenuRoot QLabel[role="animatedTitle"] {
+    background: transparent;
+    color: transparent;
+}
+
+#MainMenuRoot QLabel[role="footer"] {
+    background: transparent;
+    color: ${COLOR_TEXT_SECONDARY};
+    font-size: 12px;
+}
+#MainMenuRoot QPushButton {
+    background-color: ${COLOR_BUTTON_NORMAL};
+    color: ${COLOR_BUTTON_FG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+#MainMenuRoot QPushButton:hover {
+    background-color: ${COLOR_BUTTON_HOVER};
+}
+#MainMenuRoot QPushButton:pressed {
+    background-color: ${COLOR_BUTTON_ACTIVE};
+}
+#MainMenuRoot QPushButton[role="action"] {
+    min-height: 30px;
+    max-width: 400px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: 2px solid ${COLOR_ACCENT};
+    background: ${COLOR_BUTTON_NORMAL};
+    color: ${COLOR_BUTTON_FG};
+}
+#MainMenuRoot QPushButton[role="action"]:hover {
+    background-color: ${COLOR_BUTTON_HOVER};
+    border-color: ${COLOR_ACCENT};
+}
+#MainMenuRoot QPushButton[role="action"]:pressed {
+    background-color: ${COLOR_BUTTON_ACTIVE};
+}

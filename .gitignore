@@ -1,0 +1,17 @@
+# 乌有乡游记版本库忽略规则：本地环境、打包产物、存档与密钥配置不进入仓库。
+
+.venv/
+__pycache__/
+*.py[cod]
+*.spec
+
+dist/
+build/
+releases/
+
+Save/
+Assets/Debug/
+docs/
+
+.vscode/
+.idea/

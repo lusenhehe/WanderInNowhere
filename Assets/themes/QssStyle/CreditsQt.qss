@@ -1,0 +1,25 @@
+QLabel#CreditsTitle {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+QLabel#CreditsSubtitle {
+    font-size: 16px;
+}
+
+QLabel#CreditsSectionHeader {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+QLabel#CreditsRoleLine {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QScrollArea#CreditsScrollArea {
+    background-color: transparent;
+    border: none;
+}

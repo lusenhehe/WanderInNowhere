@@ -1,0 +1,89 @@
+#SettingsRoot QFrame,
+#SettingsRoot QStackedWidget,
+#SettingsRoot QGroupBox {
+    background-color: ${COLOR_PANEL_BG};
+    border: none;
+    border-radius: 10px;
+}
+
+#SettingsRoot QListView {
+    background-color: ${COLOR_PANEL_BG};
+    border-radius: 8px;
+}
+
+#SettingsRoot QLineEdit,
+#SettingsRoot QSpinBox,
+#SettingsRoot QComboBox {
+    background-color: ${COLOR_PANEL_BG};
+    border: 1px solid ${COLOR_BORDER};
+    border-radius: 8px;
+    padding: 6px;
+}
+
+#SettingsRoot QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 26px;
+    border: none;
+}
+/* ========== 仅美化 #SettingsRoot 下的 QListWidget 核心样式 ========== */
+#SettingsRoot QListWidget {
+    border: none;          
+    outline: none;         
+    background: transparent;
+    padding: 0px;          
+    color: #FFFFFF;       
+    font-size: 13px;       
+}
+/* 列表每一个item项 - 核心美化+消除间隙 */
+#SettingsRoot QListWidget::item {
+    border: none;      
+    border-radius: 3px;
+    padding: 5px 5px; 
+    background: transparent;
+}
+#SettingsRoot QListWidget::item:selected {
+    border: none;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3879E0, stop:1 #2F60C0);
+    color: #FFFFFF;
+}
+#SettingsRoot QListWidget::item:hover:!selected {
+    background: rgba(70, 110, 200, 0.3);
+    color: #FFFFFF;
+}
+#SettingsRoot QListWidget::item:selected:!active {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3879E0, stop:1 #2F60C0);
+    color: #FFFFFF;
+}
+
+#SettingsRoot QMenu::item:selected {
+    background-color: ${COLOR_SELECTED_BG};
+}
+
+
+QLabel#SettingsHeader {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+/* Ensure list items have consistent padding/margins/border so hover and selected visuals match */
+#SettingsRoot QListWidget::item {
+    margin: 6px 4px;
+    border-radius: 8px;
+}
+
+#SettingsRoot QListWidget::item:hover {
+    background-color: rgba(255,255,255,0.03);
+}
+
+#SettingsRoot QListWidget::item:selected {
+    background-color: ${COLOR_SELECTED_BG};
+    border: 2px solid rgba(255,255,255,0.95);
+    margin: 0px 0px;
+    border-radius: 2px;
+}
+
+/* Remove any default focus outline so border size is controlled only by ::item:selected */
+#SettingsRoot QListWidget:focus {
+    border: none;
+}
